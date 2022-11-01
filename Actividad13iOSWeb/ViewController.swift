@@ -24,6 +24,45 @@ class ViewController: UIViewController {
     
     @IBAction func animacion( sener:UIButton){
         
+        UIView.animate(withDuration: 1) {
+            self.leadingConstraint.constant = 10
+            self.view.layoutIfNeeded()
+        }
+        
+        UIView.animate(withDuration: 1) {
+            self.leadingConstraint.constant = 10
+            self.view.layoutIfNeeded()
+        } completion: { (done) in
+            if done {
+                UIView.animate(withDuration: 1, delay: 1, options: []) {
+                    self.leadingConstraint.constant = -260
+                    self.view.layoutIfNeeded()
+                }
+        }
+    }
+        
+        UIView.animate(withDuration: 1) {
+            self.trailingConstraint.constant = 10
+            self.view.layoutIfNeeded()
+        }
+        
+        UIView.animate(withDuration: 1) {
+            self.trailingConstraint.constant = 10
+            self.view.layoutIfNeeded()
+        } completion: { (done) in
+            if done {
+                UIView.animate(withDuration: 1, delay: 1, options: []) {
+                    self.trailingConstraint.constant = -260
+                    self.view.layoutIfNeeded()
+                }
+        }
+    }
+
+
+
+        
+       
+        
     }
     
     @IBAction func buttonTapped(){
@@ -34,3 +73,4 @@ class ViewController: UIViewController {
 }
     
 }
+
