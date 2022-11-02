@@ -60,7 +60,7 @@
                                     <constraint firstItem="FQi-5w-XK0" firstAttribute="leading" secondItem="Moh-ps-DUU" secondAttribute="leading" id="xyT-So-q6t"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoj-1m-nut">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btnVerTop" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoj-1m-nut">
                                 <rect key="frame" x="132" y="712" width="150" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
