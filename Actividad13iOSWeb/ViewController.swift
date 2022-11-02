@@ -24,12 +24,15 @@ class ViewController: UIViewController {
     
     @IBAction func animacion( sener:UIButton){
         
+        /*Portada
         UIView.animate(withDuration: 1) {
             self.leadingConstraint.constant = 10
             self.view.layoutIfNeeded()
         }
+        */
         
-        UIView.animate(withDuration: 1) {
+        
+        UIView.animate(withDuration: 4) {
             self.leadingConstraint.constant = 10
             self.view.layoutIfNeeded()
         } completion: { (done) in
@@ -41,12 +44,14 @@ class ViewController: UIViewController {
         }
     }
         
+        /*introduccion
         UIView.animate(withDuration: 1) {
             self.trailingConstraint.constant = 10
             self.view.layoutIfNeeded()
         }
+        */
         
-        UIView.animate(withDuration: 1) {
+        UIView.animate(withDuration: 9) {
             self.trailingConstraint.constant = 10
             self.view.layoutIfNeeded()
         } completion: { (done) in
